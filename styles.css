@@ -1,64 +1,14 @@
 
 .filter-input {
-  width: 180px; /* Increase the width to 100% */
-  height: 45px; /* Increase the height */
-  border: 5px solid #ccc;
-  border-radius: 20px; /* Round the corners */
- 
-  font-family: Arial, sans-serif; /* Change the font style */
-  font-size: 14px;
+  align-items: baseline;
+  width: 120px;
 }
 
 /* Rest of your CSS styles */
 /* styles.css */
 
 /* Style the container for the courses grid */
-.courses-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 20px;
-}
 
-/* Style individual course boxes */
-.course-box {
-  border: 1px solid #ccc;
-  text-align: left;
-  padding: 20px; /* Increase padding for spacing inside the boxes */
-  border-radius: 10px; /* Add rounded corners */
-  margin: 10px; /* Add margin for spacing between boxes */
-}
-
-/* Style course actions (Edit and Delete buttons) */
-.course-actions {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-/* Rest of your CSS styles */
-
-/* Style the course cards */
-.course-card {
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
-  text-align: left;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.course-card h3 {
-  font-size: 18px;
-  margin: 0;
-}
-
-.course-card p {
-  font-size: 14px;
-  margin: 5px 0;
-}
-
-/* Style the buttons */
 button {
   background-color: #0074d9;
   color: #fff;
@@ -86,7 +36,7 @@ h1 {
   margin-bottom: 20px;
 }
 .add-course-button {
-  background-color: #0074d9; /* Change the background color */
+  background-color: #a8bbef; /* Change the background color */
   color: #fff; /* Change the text color */
   border: none;
   padding: 10px 20px;
@@ -175,4 +125,186 @@ input[type="text1"] {
 
 .student-actions button:hover {
   background-color: #b02a37;
+}
+/* Table styles */
+.courses-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.courses-table table th, .courses-table table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.courses-table table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.courses-table table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.courses-table table tr:hover {
+  background-color: #ddd;
+}
+
+/* Button styles */
+.courses-table table button {
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.courses-table table button:hover {
+  background-color: #2980b9;
+}
+
+/* Input styles */
+.filter-input input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Form styles */
+.courses-table > div {
+  margin-bottom: 20px;
+}
+
+/* Centered headings */
+h2 {
+  text-align: center;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.overlay-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.overlay-content input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.overlay-content button {
+  padding: 10px;
+  margin: 10px 5px;
+  border: none;
+  background: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+.overlay-content button:hover {
+  background: #0056b3;
+}
+.addc{
+  margin-bottom: 20px;
+  background-image: url( 'data:image/jpeg;base64,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'); 
+  background-size: cover; 
+  width: 40px; 
+  height: 40px; 
+  font-size: 0rem;
+}
+.students-table {
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+td {
+  border: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+input, select {
+  width: 100%;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.filter-input {
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Add your additional styling as needed */
+.add-student-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.add-student-form {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+
+.form-buttons button {
+  margin: 5px;
 }
