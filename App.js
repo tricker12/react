@@ -23,3 +23,20 @@ function App() {
 }
 
 export default App;
+
+
+import Link from 'next/link';
+
+function Header(){
+    return (
+        <header className="header">
+            <h1>Course Dashboard</h1>
+          <div className="header-buttons">
+          <Link href="/teacher">Teacher Dashboard</Link>
+          <Link href="/student">Student Dashboard</Link>
+          </div>
+          
+        </header>
+      );
+}
+export default Header;
